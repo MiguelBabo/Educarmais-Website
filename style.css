@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;600;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root{
+    --white: hsl(0, 100%, 100%);
+    --blue: hsl(235, 60%, 25%);
+    --shadow: hsla(0, 0%, 0%, 0.40);
+    --yellow: hsl(50, 100%, 50%);
+    --black: hsl(0, 0%, 0%);
+    --pearsonColor: #0080a3;
+    --makerColor: #815aa5;
+}
+
+body{
+    overflow-x: hidden;
+    opacity: 1 !important;
+}
+
+
+.custom-shape-divider-top-1700696031 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;}
+.custom-shape-divider-top-1700696031 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;}
+.custom-shape-divider-top-1700696031 .shape-fill {
+    fill: #FFFFFF;}
+
+.custom-shape-divider-bottom-1700696225 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);}
+.custom-shape-divider-bottom-1700696225 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;}
+.custom-shape-divider-bottom-1700696225 .shape-fill {
+    fill: #FFFFFF;}
+    
+.custom-shape-divider-top-1700781442 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;}
+.custom-shape-divider-top-1700781442 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;}
+.custom-shape-divider-top-1700781442 .shape-fill {
+        fill: #fff;}
+
+.custom-shape-divider-bottom-1700781633 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);}    
+.custom-shape-divider-bottom-1700781633 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 67px;}   
+.custom-shape-divider-bottom-1700781633 .shape-fill {
+            fill: #815aa5;}
+
+.custom-shape-divider-bottom-1700783099 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);}
+.custom-shape-divider-bottom-1700783099 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;}
+.custom-shape-divider-bottom-1700783099 .shape-fill {
+    fill: #192066;}
+
+
+#head{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    z-index: 2; /* Ensure the navbar is on top of the overlay */
+}
+
+#head #header{
+    padding: 15px;
+    background-color: var(--blue);
+    display: flex;
+    transition: 0.3s;
+    gap: 20px;
+    border-radius: 0 0 8px 8px; 
+    box-shadow: 0 0 20px var(--shadow);
+}
+#head #header:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+}
+
+#head #header button{
+    padding: 10px 20px;
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    transition: 0.3s;
+
+}
+#head #header button:hover{
+    transform: scale(1.1,1.1);
+    color: var(--yellow);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#home{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/Fachada3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: change 25s infinite ease;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    background-blend-mode: multiply;
+}
+
+#home #welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 140px;
+}
+
+#about{
+    width: 100vw;
+    height: 100vh;
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 160px;
+}
+
+#about #images{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#about #images img{
+    width: 600px;
+    height: 400px;
+    transition: .3s;
+    border-radius: 6px;
+    box-shadow: 0 0 20px var(--shadow);
+}
+#about #images img:hover{
+    transition: .3s;
+    transform: scale(1.1,1.1);
+}
+
+#about #text1{
+    width: 800px;
+    max-width: 150ch;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0.75;
+    font-size: 17px;
+    box-shadow: 0 0 20px var(--shadow);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#proposal{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 100px;
+    background-color: hsl(50, 100%, 70%);
+}
+
+#proposal #title1{
+    max-width: 100ch;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#proposal #buttons1{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+#proposal #buttons1 .prop{
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    transition: .3s;
+}
+#proposal #buttons1 .prop:hover{
+    transform: scale(1.2,1.2);
+    transition: .3s;
+    cursor: pointer;
+}
+
+#proposal #perspectives{
+    padding: 20px;
+    max-width: 100ch;
+    text-align: center;
+    box-shadow: 0 0 20px var(--shadow);
+    border-radius: 6px;
+    transition: .3s;
+    background-color: #fff;
+}
+#proposal #perspectives:hover{
+    transition: .3s;
+    transform: scale(1.1,1.1);
+}
+    
+#proposal #perspectives #textP{
+    opacity: 0.75;
+}
+
+#structure{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#structure #text2{
+    padding: 20px;
+    max-width: 100ch;
+    box-shadow: 0 0 20px var(--shadow);
+    text-align: center;
+    border-radius: 6px;
+}
+
+#structure #photos{
+    width: 850px;
+    height: 600px;
+    background-image: url('assets/Fachada3.jpg');
+    background-size: cover;
+    animation: change 20s infinite ease; 
+    border-radius: 6px;
+    box-shadow: 0 0 20px var(--shadow);
+    transition: .3s;
+}
+
+#structure #photos:hover{
+    transform: scale(1.08,1.08);
+    transition: .3s;
+}
+
+#pearson{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--pearsonColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pearson #container1{
+    width: 650px;
+    height: 600px;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 20px var(--shadow);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+#pearson #container1 #image1{
+    display: flex;
+    justify-content: center;
+}
+
+#pearson #container1 #image1 img{
+    width: 400px;
+    height: 200px;
+}
+
+#pearson #container1 #text3 .pearsonT{
+    opacity: 0.75;
+}
+
+#pearson #container1 div button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    transition: .3s background;
+    background-color: transparent;
+}
+#pearson #container1 div button:hover{
+    background-color: var(--pearsonColor);
+    transition: .3s;
+    font-size: 15px;
+    cursor: pointer background;
+}
+
+#maker{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--makerColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#maker #container2{
+    width: 650px;
+    height: 600px;
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 20px var(--shadow);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+#maker #container2 #image2{
+    display: flex;
+    justify-content: center;
+}
+
+#maker #container2 #image2 img{
+    width: 400px;
+    height: 120px;
+}
+
+#maker #container2 #text4 .makerT{
+    opacity: 0.75;
+}
+
+#maker #container2 div button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    transition: .3s background;
+    background-color: transparent;
+}
+#maker #container2 div button:hover{
+    background-color: var(--makerColor);
+    transition: .3s;
+    font-size: 15px;
+    cursor: pointer background;
+}
+
+#contact{
+    width: 100vw;
+    height: 90vh;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#contact #title2{
+    text-align: center;
+}
+#contact #title2 #contactT{
+    font-size: 50px;
+    color:hsl(50, 100%, 50%);
+}
+#contact #title2 #contactP{
+    color:hsl(50, 100%, 50%);
+    font-size: 20px;
+}
+
+#contact #container3{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#contact #container3 #socials{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact #container3 #contacts{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+#contact #container3 #contacts div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+#contact #container3 #localization{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+
+#contact #container3 .titleC{
+    color: var(--yellow)
+}
+
+#contact #container3 #socials #insta{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+#contact #container3 #socials #face{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+hr{
+    width: 70vw;
+}
+
+@keyframes change{
+    10%{
+        background-image: url('assets/Veiculo.jpg');
+    }
+    20%{
+        background-image: url('assets/_MG_0216.jpg');
+    }
+    30%{
+        background-image: url('assets/_MG_0218.jpg');
+    }
+    40%{
+        background-image: url('assets/_MG_0254.jpg');
+    }
+    50%{
+        background-image: url('assets/_MG_0276.jpg');
+    }
+    60%{
+        background-image: url('assets/_MG_0282.jpg');
+    }
+    70%{
+        background-image: url('assets/_MG_0284.jpg');
+    }
+    80%{
+        background-image: url('assets/_MG_0286.jpg');
+    }
+    90%{
+        background-image: url('assets/_MG_0296.jpg');
+    }
+    100%{
+        background-image: url('assets/Fachada3.jpg');
+    }
+}
