@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.custom-shape-divider-bottom-1714084212 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1714084212 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+.custom-shape-divider-bottom-1714084212 .shape-fill {
+    fill: #F8F7F4;
+}
+
+.custom-shape-divider-top-1714089703 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1714089703 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+.custom-shape-divider-top-1714089703 .shape-fill {
+    fill: #F8F7F4;
+}
+
+.custom-shape-divider-bottom-1714156374 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1714156374 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+.custom-shape-divider-bottom-1714156374 .shape-fill {
+    fill: #ffbb13;
+}
+
+.custom-shape-divider-bottom-1714156497 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1714156497 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+.custom-shape-divider-bottom-1714156497 .shape-fill {
+    fill: #000114;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif, monospace;
+}
+
+body{
+    background: #F8F7F4;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+#home{
+    width: 100vw;
+    min-height: 95vh;
+    background-image: url("../assets/fachada.jpg");
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.85);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 2;
+}
+
+#home #title1{
+    padding: 100px;
+}
+
+#home #title1 h1, 
+#home #title1 h2{
+    font-size: 75px;
+    color: #fff;
+}
+
+#home #title1 h1{ color: #fffb00; }
+
+@media screen and (max-width: 512px){
+    .custom-shape-divider-bottom-1714156497 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 35px;
+    }
+    .custom-shape-divider-bottom-1714156374 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 35px;
+    }
+    .custom-shape-divider-top-1714089703 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 35px;
+    }
+    .custom-shape-divider-bottom-1714084212 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 35px;
+    }
+    
+    #home{
+        background-position: center;
+    }
+
+    #home #title1{
+        padding: 50px;
+    }
+
+    #home #title1 h1, 
+    #home #title1 h2{
+        font-size: 45px;
+    }
+}
